@@ -7,10 +7,11 @@ using System.Threading.Tasks;
 
 namespace DAL.Entities
 {
-    class Department
+    public class Department
     {
         public int Id { get; set; }
         [Required]
         public string Name { get; set; }
+        public virtual ICollection<Book> Books { get; set; } = new HashSet<Book>();
     }
 }

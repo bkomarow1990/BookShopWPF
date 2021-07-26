@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Gnidez.itstep.000.001.002\source\repos\BookShop\BookShop\obj\Debug\
+C:\Users\Igor\Source\Repos\BookShopWPF\BookShop\obj\Debug\
 BookShop
 none
 false
 DEBUG;TRACE
-C:\Users\Gnidez.itstep.000.001.002\source\repos\BookShop\BookShop\App.xaml
-11151548125
+C:\Users\Igor\Source\Repos\BookShopWPF\BookShop\App.xaml
+6581778629
 
-61434861427
-161747635772
-MainWindow.xaml;
+14151110435
+22675476825
+Forms\EditForm.xaml;Forms\RegisterForm.xaml;Forms\MainForm.xaml;MainWindow.xaml;Pages\EditPage.xaml;Pages\MainPage.xaml;
 
 True
 

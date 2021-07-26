@@ -23,6 +23,7 @@ namespace DAL
         //Navigation
         public virtual Author Author { get; set; }
         public virtual Genre Genre { get; set; }
-        public Book Parent_Book { get; set; }
+        public virtual Department Department { get; set; }
+        public virtual Book Parent_Book { get; set; }
     }
 }

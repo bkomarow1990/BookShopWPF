@@ -1,0 +1,6 @@
+C:\Users\Igor\Source\Repos\BookShopWPF\WorkServices\bin\Debug\WorkServices.dll
+C:\Users\Igor\Source\Repos\BookShopWPF\WorkServices\bin\Debug\WorkServices.pdb
+C:\Users\Igor\Source\Repos\BookShopWPF\WorkServices\obj\Debug\WorkServices.csproj.AssemblyReference.cache
+C:\Users\Igor\Source\Repos\BookShopWPF\WorkServices\obj\Debug\WorkServices.csproj.CoreCompileInputs.cache
+C:\Users\Igor\Source\Repos\BookShopWPF\WorkServices\obj\Debug\WorkServices.dll
+C:\Users\Igor\Source\Repos\BookShopWPF\WorkServices\obj\Debug\WorkServices.pdb

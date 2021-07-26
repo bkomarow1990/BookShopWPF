@@ -1,0 +1,14 @@
+C:\Users\Igor\Source\Repos\BookShopWPF\DAL\bin\Debug\DAL.dll.config
+C:\Users\Igor\Source\Repos\BookShopWPF\DAL\bin\Debug\DAL.dll
+C:\Users\Igor\Source\Repos\BookShopWPF\DAL\bin\Debug\DAL.pdb
+C:\Users\Igor\Source\Repos\BookShopWPF\DAL\bin\Debug\EntityFramework.dll
+C:\Users\Igor\Source\Repos\BookShopWPF\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Igor\Source\Repos\BookShopWPF\DAL\bin\Debug\EntityFramework.xml
+C:\Users\Igor\Source\Repos\BookShopWPF\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Igor\Source\Repos\BookShopWPF\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\Igor\Source\Repos\BookShopWPF\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Igor\Source\Repos\BookShopWPF\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\Igor\Source\Repos\BookShopWPF\DAL\obj\Debug\DAL.dll
+C:\Users\Igor\Source\Repos\BookShopWPF\DAL\obj\Debug\DAL.pdb
+C:\Users\Igor\Source\Repos\BookShopWPF\DAL\bin\Debug\AutoMapper.dll
+C:\Users\Igor\Source\Repos\BookShopWPF\DAL\bin\Debug\AutoMapper.xml

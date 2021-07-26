@@ -3,10 +3,96 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:BookShop"
+        xmlns:local="clr-namespace:BookShop" xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        AllowsTransparency="True"
+        WindowStyle="None"
+        MouseLeftButtonDown="Window_MouseLeftButtonDown"
+        Background="Transparent"
+        WindowStartupLocation="CenterScreen"
         
+        Title="MainWindow" Height="500" Width="400">
+    <Window.Resources>
+        <Style x:Key="ContextButtonStyle" TargetType="{x:Type Button}" BasedOn="{StaticResource MaterialDesignRaisedButton}">
+            <Setter Property="Background" Value="Transparent"></Setter>
+            <Setter Property="BorderThickness" Value="0" ></Setter>
+        </Style>
+    </Window.Resources>
+    <Grid>
+
+        <!--</Grid>
+    
+    <Grid>
+        <ListBox x:Name="itemsListBox"> </ListBox>
+    </Grid>-->
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Border Grid.RowSpan="3" CornerRadius="12" >
+                <Border.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#660099" Offset="0.1"></GradientStop>
+                        <GradientStop Color="#C70039" Offset="1"></GradientStop>
+                    </LinearGradientBrush>
+                </Border.Background>
+            </Border>
+            <DockPanel Grid.Row="0">
+                <!--<Button DockPanel.Dock="Right" VerticalAlignment="Top" HorizontalAlignment="Right"
+                     Style="{StaticResource ContextButtonStyle}"
+                    Width="50"
+                    Height="50"
+                    Padding="0,0,0,0"
+                 ToolTip="Resource name: MaterialDesignRaisedButton">
+                    <materialDesign:PackIcon Kind="CloseCircle" Width="50" Height="50"/>
+                </Button>-->
+                <Button DockPanel.Dock="Right"  VerticalAlignment="Top" HorizontalAlignment="Right"
+                    Width="30" Height="30"
+                    Command="{Binding CloseWindowCommand}"
+                    Style="{StaticResource MaterialDesignFloatingActionLightButton}"
+                    ToolTip="CloseWindow" Name="CloseButton"
+                    Margin="10">
+
+                    <materialDesign:PackIcon Kind="WindowClose" Width="24" Height="24" />
+                </Button>
+                <Button DockPanel.Dock="Right"  VerticalAlignment="Top" HorizontalAlignment="Right"
+                    Width="30" Height="30"
+                    Command="{Binding MinimizeWindowCommand}"
+                    Style="{StaticResource MaterialDesignFloatingActionLightButton}"
+                    ToolTip="MinimizeWindow" Name="MinimizeButton"
+                    Margin="0,10,0,0">
+
+                    <materialDesign:PackIcon Kind="WindowMinimize" Width="26" Height="24" />
+                </Button>
+            </DockPanel>
+            <StackPanel VerticalAlignment="Center">
+                <TextBlock FontFamily="{StaticResource BebasFontBook}" Foreground="White"  HorizontalAlignment="Center" FontSize="32" >BookShop</TextBlock>
+                <!--<Image Source="Images/logo.png" Width="50">
+
+                </Image>-->
+                <Border HorizontalAlignment="Center">
+                    <materialDesign:PackIcon Foreground="White" Kind="Book" Width="100" Height="100"/>
+                </Border>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,70,0,0" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Center">
+                <PasswordBox Width="250" Height="30" AutomationProperties.HelpText="Enter Password" Name="passwordTxtBox" Foreground="White" FontFamily="Helvetica" FontWeight="Light">
+
+                </PasswordBox>
+                <materialDesign:PackIcon Kind="LockQuestion" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" Width="25" Height="25"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,20,0,0" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Center">
+                <TextBox Width="250" Height="30" BorderThickness="0,0,0,1" Foreground="White" Name="loginTxtBox" FontFamily="Helvetica" FontWeight="Light">
+                    Enter Username
+
+                </TextBox>
+                <materialDesign:PackIcon Kind="Account" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" Width="25" Height="25"/>
+
+            </StackPanel>
+            <StackPanel  Orientation="Horizontal" Grid.Row="1" Margin="0,50,0,0" HorizontalAlignment="Center">
+                <Button Margin="0,0,26,0" Name="loginBtn" Click="loginBtn_Click">LOGIN</Button>
+                <Button Command="{Binding RegisterWindowCommand}" >REGISTER</Button>
+            </StackPanel>
+        </Grid>
     </Grid>
 </Window>
