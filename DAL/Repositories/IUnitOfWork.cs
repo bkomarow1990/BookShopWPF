@@ -18,7 +18,7 @@ namespace DAL.Repositories
         GenericRepository<User> UserRepository { get; }
     }
     public class UnitOfWork : IUnitOfWork, IDisposable {
-        private BookShopDBContext context = new BookShopDBContext();
+        private static BookShopDBContext context = new BookShopDBContext();
 
         private GenericRepository<Author> authorRepository;
         private GenericRepository<Book> bookRepository;

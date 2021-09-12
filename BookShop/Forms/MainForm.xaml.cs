@@ -1,5 +1,8 @@
-﻿using BookShop.Pages;
+﻿using BookShop.Forms;
+using BookShop.Pages;
 using BookShop.ViewModels;
+using MaterialDesignThemes.Wpf;
+using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,6 +25,7 @@ namespace BookShop
     public partial class MainForm : Window
     {
         MainWindow mw;
+        private readonly PaletteHelper _paletteHelper = new PaletteHelper();
         ViewModel vm;
         public MainForm(ViewModel vm, MainWindow mw)
         {
@@ -30,6 +34,21 @@ namespace BookShop
             this.mw = mw;
             this.DataContext = vm;
             this.MainFrame.Content = new MainPage(vm);
+            RegistryKey rk = Registry.CurrentUser.OpenSubKey("SOFTWARE\\BookShop");
+            if (rk == null)
+            {
+                rk = Registry.CurrentUser.CreateSubKey("SOFTWARE\\BookShop");
+            }
+            RegistryKey rk2 = Registry.CurrentUser.OpenSubKey("SOFTWARE\\BookShop\\Theme");
+            if (rk2 == null)
+            {
+                rk2 = Registry.CurrentUser.CreateSubKey("SOFTWARE\\BookShop\\Theme");
+                rk2.SetValue("Theme","Light");
+            }
+            //RegistryKey currentUserKey = Registry.CurrentUser;
+            //RegistryKey softwareKey = currentUserKey.OpenSubKey("SOFTWARE", true);
+            //RegistryKey subHelloKey = softwareKey.CreateSubKey("BookShop");
+
         }
 
         private void Window_Closed(object sender, EventArgs e)
@@ -67,7 +86,29 @@ namespace BookShop
 
         private void editPageBtn_Click(object sender, RoutedEventArgs e)
         {
+            EditForm ef = new EditForm(vm);
+            ef.ShowDialog();
+        }
 
+        private void themeCheckBox_Checked(object sender, RoutedEventArgs e)
+        {
+            //RegistryKey currentUserKey = Registry.CurrentUser;
+            RegistryKey rk = Registry.CurrentUser.OpenSubKey("SOFTWARE\\BookShop\\Theme",true);
+            rk.SetValue("Theme", "Dark");
+            SetTheme(false);
+
+        }
+        private void SetTheme(bool isDark) {
+            ITheme theme = _paletteHelper.GetTheme();
+            IBaseTheme baseTheme = isDark ? new MaterialDesignDarkTheme() : (IBaseTheme)new MaterialDesignLightTheme();
+            theme.SetBaseTheme(baseTheme);
+            _paletteHelper.SetTheme(theme);
+        }
+        private void themeCheckBox_Unchecked(object sender, RoutedEventArgs e)
+        {
+            RegistryKey rk = Registry.CurrentUser.OpenSubKey("SOFTWARE\\BookShop\\Theme",true);
+            rk.SetValue("Theme", "Light");
+            SetTheme(true);
         }
     }
 }

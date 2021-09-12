@@ -1,9 +1,14 @@
 {
   "ExpandedNodes": [
     "",
+    "\\BLL",
+    "\\BLL\\Services",
     "\\BookShop",
-    "\\BookShop\\Forms"
+    "\\BookShop\\Forms",
+    "\\BookShop\\ViewModels",
+    "\\DAL",
+    "\\DAL\\Repositories"
   ],
-  "SelectedNode": "\\BookShop\\Forms\\MainForm.xaml.cs",
+  "SelectedNode": "\\BookShop\\ViewModels\\ViewModel.cs",
   "PreviewInSolutionExplorer": false
 }

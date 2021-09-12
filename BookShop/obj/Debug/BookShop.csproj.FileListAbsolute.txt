@@ -42,3 +42,6 @@ C:\Users\Igor\Source\Repos\BookShopWPF\BookShop\obj\Debug\Forms\MainForm.g.cs
 C:\Users\Igor\Source\Repos\BookShopWPF\BookShop\obj\Debug\Forms\MainForm.baml
 C:\Users\Igor\Source\Repos\BookShopWPF\BookShop\obj\Debug\Pages\EditPage.g.cs
 C:\Users\Igor\Source\Repos\BookShopWPF\BookShop\obj\Debug\Pages\EditPage.baml
+C:\Users\Igor\Source\Repos\BookShopWPF\BookShop\obj\Debug\Forms\EditForm.g.cs
+C:\Users\Igor\Source\Repos\BookShopWPF\BookShop\bin\Debug\NumericUpDownLib.dll
+C:\Users\Igor\Source\Repos\BookShopWPF\BookShop\obj\Debug\Forms\EditForm.baml

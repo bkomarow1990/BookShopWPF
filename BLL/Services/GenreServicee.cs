@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using BLL.DTOs;
+using BLL.Exceptions;
 using DAL.Entities;
 using DAL.Repositories;
 using System;
@@ -35,7 +36,12 @@ namespace BLL.Services
 
         public void Add(GenreDTO genre)
         {
+            if (this.GetAll().Any(el => el.Name == genre.Name))
+            {
+                throw new GenreException("Genre is alredy exists");
+            }
             genres.Insert(mapper.Map<Genre>(genre));
+            unitOfWork.Save();
         }
 
         public IEnumerable<GenreDTO> GetAll()

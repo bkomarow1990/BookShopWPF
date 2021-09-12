@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using BLL.DTOs;
+using BLL.Exceptions;
 using DAL.Entities;
 using DAL.Repositories;
 using System;
@@ -35,6 +36,10 @@ namespace BLL.Services
 
         public void Add(AuthorDTO author)
         {
+            if (this.GetAll().Any(el => el.Name == author.Name && el.Surname == author.Surname))
+            {
+                throw new AuthorException("Author is exists");
+            }
             authors.Insert(mapper.Map<Author>(author));
         }
 
