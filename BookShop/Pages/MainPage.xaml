@@ -9,6 +9,6 @@
       Title="MainPage">
 
     <Grid>
-        <ListBox x:Name="booksListBox"> </ListBox>
+        <ListBox x:Name="booksListBox" ItemsSource="{Binding Books}"> </ListBox>
     </Grid>
 </Page>

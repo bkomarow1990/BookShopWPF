@@ -89,6 +89,8 @@ namespace BookShop.Forms
                     MessageBox.Show("Book was added");
                 }
 
+                vm.Books = vm.bookService.GetAll().ToList();
+
             }
             catch (Exception ex) {
                 MessageBox.Show(ex.Message);

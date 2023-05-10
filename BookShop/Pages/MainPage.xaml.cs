@@ -27,7 +27,7 @@ namespace BookShop.Pages
             InitializeComponent();
             this.vm = vm;
             this.DataContext = vm;
-            this.booksListBox.ItemsSource = vm.bookService.GetAll().ToList();
+            //this.booksListBox.ItemsSource = vm.bookService.GetAll().ToList();
         }
     }
 }

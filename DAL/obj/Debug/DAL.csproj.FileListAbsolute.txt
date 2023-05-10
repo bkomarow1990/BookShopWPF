@@ -12,3 +12,17 @@ C:\Users\Igor\Source\Repos\BookShopWPF\DAL\obj\Debug\DAL.dll
 C:\Users\Igor\Source\Repos\BookShopWPF\DAL\obj\Debug\DAL.pdb
 C:\Users\Igor\Source\Repos\BookShopWPF\DAL\bin\Debug\AutoMapper.dll
 C:\Users\Igor\Source\Repos\BookShopWPF\DAL\bin\Debug\AutoMapper.xml
+C:\Users\BOGDAN\Source\Repos\BookShopWPF\DAL\bin\Debug\DAL.dll.config
+C:\Users\BOGDAN\Source\Repos\BookShopWPF\DAL\bin\Debug\DAL.dll
+C:\Users\BOGDAN\Source\Repos\BookShopWPF\DAL\bin\Debug\DAL.pdb
+C:\Users\BOGDAN\Source\Repos\BookShopWPF\DAL\bin\Debug\AutoMapper.dll
+C:\Users\BOGDAN\Source\Repos\BookShopWPF\DAL\bin\Debug\EntityFramework.dll
+C:\Users\BOGDAN\Source\Repos\BookShopWPF\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\BOGDAN\Source\Repos\BookShopWPF\DAL\bin\Debug\AutoMapper.xml
+C:\Users\BOGDAN\Source\Repos\BookShopWPF\DAL\bin\Debug\EntityFramework.xml
+C:\Users\BOGDAN\Source\Repos\BookShopWPF\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\BOGDAN\Source\Repos\BookShopWPF\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\BOGDAN\Source\Repos\BookShopWPF\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\BOGDAN\Source\Repos\BookShopWPF\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\BOGDAN\Source\Repos\BookShopWPF\DAL\obj\Debug\DAL.dll
+C:\Users\BOGDAN\Source\Repos\BookShopWPF\DAL\obj\Debug\DAL.pdb
